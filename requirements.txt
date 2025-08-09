@@ -14,3 +14,15 @@ pillow>=8.0.0
 matplotlib>=3.3.0
 tqdm>=4.60.0
 pyyaml>=6.0.0
+
+black
+flake8
+isort
+loguru
+mkdocs
+pip
+pytest
+python-dotenv
+tqdm
+typer
+-e .

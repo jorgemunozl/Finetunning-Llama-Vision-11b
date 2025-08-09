@@ -5,7 +5,7 @@ using multiple similarity metrics.
 
 import matplotlib.pyplot as plt
 import numpy as np
-from metric import evaluate_directories
+from src.metric import evaluate_directories
 
 
 def plot_metric_comparison(include_improved=False):

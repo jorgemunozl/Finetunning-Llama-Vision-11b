@@ -41,14 +41,8 @@ ipython_config.py
 
 # THIS PROJECT
 *.safetensors
-groundT/
-FT/
-mermaid_outputs/
-mermaid_outputs_improved/
-NFT/
-NEWBATCHNFTLAST/
-FTBATCHLAST/
 
+DATASET/
 
 # Environments
 .env

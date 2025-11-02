@@ -56,7 +56,7 @@ def jaccard_similarity(s1: str, s2: str) -> float:
     
     intersection = len(set1.intersection(set2))
     union = len(set1.union(set2))
-    
+
     if union == 0:
         return 100.0
     return (intersection / union) * 100.0

@@ -1,5 +1,6 @@
 import gc
 import torch
+
 def clear_cuda():
     """Clear all CUDA memory and variables"""
     # Delete any existing models/variables if they exist

@@ -1,9 +1,14 @@
 # Flowchart-to-Mermaid Transformer
 
-This project converts flowchart images into [Mermaid](https://mermaid-js.github.io/) code using a vision-language model 
-[Llama 3.2 Vision](https://huggingface.co/unsloth/Llama-3.2-11B-Vision-Instruct)
- + (QLoRA adapters)[]
-). It supports both fine-tuned (FT) and non-fine-tuned (NFT) model evaluation.
+
+Thanks to Joel Timana for his support during the development of this project.
+
+This project converts flowchart images into [Mermaid](https://mermaid-js.github.io/) code using a vision-language model [Llama 3.2 Vision](https://huggingface.co/unsloth/Llama-3.2-11B-Vision-Instruct)
+ 
+ 
+It supports both fine-tuned (FT - LoRA adapters) and non-fine-tuned (NFT) model evaluation.
+
+Thanks to Unsloth AI for their packages that make possible this project.
 
 
 ## 🚀 Quick Start
@@ -14,6 +19,9 @@ This project converts flowchart images into [Mermaid](https://mermaid-js.github.
     ```
 
 2. **Run inference:**
+
+I strongly recommend use a GPU, otherwise the time that you are going to need is quite a lot.
+
     ```bash
     python inferenceNFT.py
     # or for FT model
@@ -79,7 +87,7 @@ flowchart TD
 
 ## Base Model
 
-
+Llama Vision 3.2 Instruct 11B
 
 ## Model Weights
 
@@ -100,7 +108,7 @@ All togheter forms more than 100000 flowcharts, using Data Augmentation we have 
 
 ## Training Process
 
-- Using the state-of-the-art QLora 
+- Using the state-of-the-art Lora. 
 
 
 ## 📑 Citation

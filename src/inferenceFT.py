@@ -113,10 +113,13 @@ for i in range(1,60):
     if assistant_response.endswith("<|eot_id|>"):
         assistant_response = assistant_response[:-9].strip()
     print(assistant_response)
-    os.makedirs("FTBATCH",exist_ok=True)
-    with open(f"FTBATCH/{i}.md","w") as f:
+
+    os.makedirs("FTBATCH", exist_ok=True)
+    with open(f"FTBATCH/{i}.md", "w") as f:
         f.write(assistant_response)
-    print("-> TIME / STR",elapsed_time_ms/len(assistant_response)/1000)s
+
+    print("-> TIME / STR", elapsed_time_ms / len(assistant_response) / 1000)
     del inputs, res
+
     torch.cuda.empty_cache()
     gc.collect()
